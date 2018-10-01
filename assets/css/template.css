@@ -1,0 +1,15 @@
+#pessoaFisica,
+#pessoaJuridica{
+    display: none;
+}
+
+.erro{
+    display: none;
+    width: 100%;
+    background-color: darkred;
+    color: #FFF;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;   
+    margin-bottom: 10px;
+}

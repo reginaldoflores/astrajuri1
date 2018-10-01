@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Astrajuri </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+	
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+	  
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><span>Astrajuri</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bem Vindo,</span>
+                <h2>Usuário</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- MENU LATERAL -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <!-- <h3>Geral</h3> -->
+                <ul class="nav side-menu">
+				
+					<li><a href="#.html"><i class="fa fa-calendar"></i> Agenda </a></li>
+					<li><a href="#.html"><i class="fa fa-users"></i> Clientes </a></li>
+					<li><a href="#.html"><i class="fa fa-folder"></i> Processos </a></li>
+					<li><a href="#.html"><i class="fa fa-user"></i> Usuários </a></li>
+					<li><a href="#.html"><i class="fa fa-money"></i> Despesas Fixas </a></li>
+
+					<li><a><i class="fa fa-bar-chart-o"></i> Relatórios <span class="fa fa-chevron-down"></span></a>
+						<ul class="nav child_menu">
+							<li><a href="chartjs.html">Chart JS</a></li>
+							<li><a href="chartjs2.html">Chart JS2</a></li>
+							<li><a href="morisjs.html">Moris JS</a></li>
+							<li><a href="echarts.html">ECharts</a></li>
+							<li><a href="other_charts.html">Other Charts</a></li>
+						</ul>
+					</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+            <!-- /MENU LATERAL -->
+
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Configrações">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+
+              <a data-toggle="tooltip" data-placement="top" title="Sair" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">Usuário
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Perfil</a></li>
+                    <li>
+                      <a href="javascript:;">
+
+                        <span>Configurações</span>
+                      </a>
+                    </li>
+
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Sair</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+
+    
+        <div class="right_col" role="main">
+	
+            <div class="clearfix"></div>
+			
+			<div id="main" class="container-fluid">
+  
+  
+			<form class="form-horizontal form-label-left" novalidate>
+  
+			<form action="index.html">
+			<div class="row">
+			
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="x_panel">
+					
+						<div class="x_title">
+							<h2>Cadastrar de Processo</h2>
+							<div class="clearfix"></div>
+						 </div>
+						  
+						<div class="x_content">
+						
+						</br>
+				  
+                    <form class="form-horizontal form-label-left" novalidate>
+
+					  
+                      <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Número do Processo: <span class="required">*</span>
+                        </label>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <input id="number" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Ex: 0002916-46.1993.8.19.0002" required="required" type="text">
+                        </div>
+                      </div>
+					  
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Origem</label>
+                        <div class="col-md-4 col-sm-9 col-xs-12">
+                          <select class="form-control">
+							<option>Selecionar</option>
+                            <option>1ª Instância</option>
+                            <option>Juizados Especiais</option>
+                          </select>
+                        </div>
+                      </div>
+					  
+					  <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Posição do Cliente</label>
+                        <div class="col-md-4 col-sm-9 col-xs-12">
+                          <select class="form-control">
+						  <option>Selecionar</option>
+                            <option>Réu</option>
+                            <option>Autor</option>
+                          </select>
+                        </div>
+                      </div>
+					  
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="tel">Clientes<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" list="Clientes" id="tel" name="phone" required="required" data-validate-length-range="8,20" class="form-control col-md-7 col-xs-12">
+							<datalist id="Clientes">
+								<option value="Reginaldo">Reginaldo</option>
+								<option value="Levy">Levy</option>
+								<option value="Walter">Walter</option>
+						</div>
+                      </div>
+					  
+                      <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="tel">Autor <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="name" id="tel" name="phone" required="required" data-validate-length-range="8,20" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+					  
+					  
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="cpf">Réu <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="name" id="cpf" name="cp" size="11" required="required" data-validate-length-range="11" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+					  
+					  
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="data_nasc">Advogado (Autor) <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="data_nasc" name="data" required="required" data-validate-length-range="8" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+					  
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="data_nasc">Advogado (Réu) <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="data_nasc" name="data" required="required" data-validate-length-range="8" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+					  
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="data_nasc">Juiz <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="data_nasc" name="data" required="required" data-validate-length-range="8" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+					  
+					  <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Comarcas</label>
+                        <div class="col-md-4 col-sm-9 col-xs-12">
+                          <select class="form-control">
+							<option>Selecionar</option>
+							<option>Niterói</option>
+                            <option>Regional de Campo Grande</option>
+                            <option>Regional de Bangu</option>
+                            <option>Regional de Santa Cruz</option>
+                          </select>
+                        </div>
+                      </div>
+					  
+					   <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Serventia</label>
+                        <div class="col-md-4 col-sm-9 col-xs-12">
+                          <select class="form-control">
+							<option>Selecionar</option>
+                            <option>8ª Vara Cível</option>
+                          </select>
+                        </div>
+                      </div>
+					  
+					  <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Fases</label>
+                        <div class="col-md-4 col-sm-9 col-xs-12">
+                          <select class="form-control">
+							<option>Selecionar</option>
+                            <option>Conhecimento</option>
+							<option>Recurso</option>
+							<option>Execução</option>
+							<option>Sentença</option>
+							<option>Arquivado Definido</option>
+							<option>Arquivado Temporário</option>
+							<option>Encerrado</option>
+                          </select>
+                        </div>
+                      </div>
+					  
+					  <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Conclusão</label>
+                        <div class="col-md-4 col-sm-9 col-xs-12">
+                          <select class="form-control">
+						   <option>Selecionar</option>
+                            <option>Causa Ganha</option>
+                            <option>Causa Perdida</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-md-offset-3">
+						  <button id="send" type="submit" class="btn btn-primary">Cadastrar</button>
+                          <button type="reset" class="btn btn-default">Cancelar</button>
+                        </div>
+                      </div>
+                    </form>
+					
+					
+                  </div>
+                </div>
+              </div>
+
+		 </div>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	
+  </body>
+</html>
